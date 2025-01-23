@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egbetua Scholarship Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="nav-item">Home</a>
+            <a href="#portal-container" class="nav-item">Apply Now</a>
+            <a href="#contact" class="nav-item">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Egbetua Scholarship Portal</h1>
+    </header>
+
+    <!-- Main Portal Container -->
+    <div id="portal-container">
+        <h2>Scholarship Application</h2>
+        
+        <!-- Scholarship Application Form -->
+        <form id="application-form">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gpa">GPA (2.5 to 4):</label>
+            <input type="number" id="gpa" name="gpa" step="0.1" min="0" max="4" placeholder="Enter your GPA" required>
+
+            <label for="essay">Personal Statement (500 words max):</label>
+            <textarea id="essay" name="essay" rows="6" maxlength="500" placeholder="Write your personal statement here" required></textarea>
+
+            <label for="attachment">Upload Transcript (PDF only):</label>
+            <input type="file" id="attachment" name="attachment" accept=".pdf" required>
+
+            <button type="submit" id="submit-btn">Submit Application</button>
+        </form>
+
+        <!-- Feedback Section -->
+        <div id="feedback-container">
+            <p id="feedback-message"></p>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <p>Powered by CDA Chairman Eng.Fred Attah <br> For any inquiries, contact us at <a href="mailto:support@egbetuascholarships.com">support@egbetuascholarships.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
